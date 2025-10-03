@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>code-tax</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start landing -->
+    <div class="landing">
+      <div class="container">
+        <h1 class="main-title">Smart - <span>Tax</span></h1>
+        <p class="info">حساب الضريبه تقديرياً للارباح الصناعية التجاريه</p>
+        <p class="about">
+          برنامج لحساب الضريبة للانشطه التجاريه والصناعية الغير ممسكه بدفاتر
+          منتظمه ويقوم بحساب الضريبة عن ماده 3 وعن قانون 91 ويقوم بأقتراح
+          القانون الافضل للفحص
+        </p>
+      </div>
+    </div>
+    <!-- end landing -->
+    <!-- start program -->
+    <div class="program">
+      <div class="container">
+        <div class="box">
+          <input
+            type="number"
+            id="grossIncome"
+            placeholder="ادخل رقم الاعمال "
+          />
+          <input
+            type="number"
+            id="percentage"
+            placeholder=" نسبه صافي الربح %"
+          />
+          <div class="years">
+            <label for="year">سنه الفحص</label>
+            <select name="year" id="year"></select>
+          </div>
+        </div>
+
+        <button class="btn" id="calc">إحسب الضريبة</button>
+        <hr />
+        <div class="sections">
+          <div class="section">
+            <p class="title">ماده 3</p>
+            <div class="total">
+              <p class="">مجمل الربح للنشاط:</p>
+              <p id="income"></p>
+            </div>
+            <div class="total">
+              <p class="">الضريبه وفقا لماده 3 تكون:</p>
+              <p id="tax3"></p>
+            </div>
+          </div>
+          <div class="section">
+            <p class="title">قانون 91</p>
+            <div class="total">
+              <p class="">صافي الربح للنشاط:</p>
+              <p id="netIncome"></p>
+            </div>
+            <div class="total">
+              <p class="">حد الاعفاء لهذه السنه:</p>
+              <p id="exp"></p>
+            </div>
+            <div class="total">
+              <p class="">الوعاء الخاضع للضريبة:</p>
+              <p id="paul"></p>
+            </div>
+            <div class="total">
+              <p class="">الضريبه وفقا لقانون 91:</p>
+              <p id="tax91"></p>
+            </div>
+          </div>
+          <div class="section">
+            <p class="title">القرار الافضل</p>
+            <p id="resolution">القرار الافضل:</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>made with love by mohamed adel Copy right</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

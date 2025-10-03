@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+  font-family: "Cairo", serif;
+  direction: rtl;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  border: 1px solid white;
+  border-radius: 7px;
+  background-color: #10b981;
+  padding: 5px 7px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.container {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 15px;
+}
+
+/* start landing */
+.landing {
+  background-image: url(../image/landing.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+  position: relative;
+}
+.landing::before {
+  content: "";
+  position: absolute;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.landing .container {
+  text-align: center;
+  position: relative;
+  z-index: 5;
+}
+.landing .container .main-title {
+  font-size: 60px;
+  color: white;
+}
+.landing .container .main-title span {
+  color: rgb(190, 24, 24);
+}
+.landing .container .about {
+  color: white;
+  padding: 10px;
+  margin: 15px auto;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.landing .container .info {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* end landing */
+.program {
+  background-color: #eee;
+}
+.program .container {
+  text-align: center;
+}
+.program .container .box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  flex-wrap: wrap;
+}
+.program .container .box input {
+  font-size: 20;
+  width: 240px;
+  padding: 8px 10px;
+  border: 2px solid black;
+  outline: none;
+}
+
+.program .container .box input::-webkit-inner-spin-button,
+.no-spinners::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.program .container .btn {
+  font-size: 22px;
+  border: 2px solid black;
+  color: white;
+  border-radius: 5 px;
+  padding: 10px;
+  transition: 0.2s;
+  margin-bottom: 10px;
+}
+.program .container .btn:hover {
+  scale: 0.9;
+}
+/* start result */
+.total {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 10px;
+  font-size: 22px;
+  margin: 30px auto;
+}
+
+.years {
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.title {
+  padding: 10px;
+  margin: 20px auto;
+  font-weight: bold;
+  font-size: 20px;
+  border: 1px solid black;
+  width: fit-content;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+#resolution {
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+.sections .section {
+  padding: 20px;
+  height: 100%;
+  background-color: white;
+  margin: 20px;
+}
+
+footer {
+  background-color: #10b981;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
